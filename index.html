@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JULKOWO – Żłobek, Przedszkole, Centrum Rozwoju Dziecka Koszalin | TPD</title>
+    
+    <!-- Podstawowe meta tagi SEO -->
+    <meta name="description" content="Nowoczesny żłobek i przedszkole JULKOWO w Koszalinie przy ul. Kornela Makuszyńskiego 2, 75-442 Koszalin. Prowadzone przez TPD. 11 etatowych specjalistów, sala sensoryczna, biofeedback, małe grupy.">
+    <meta name="keywords" content="żłobek Koszalin, przedszkole Koszalin, Julkowo Koszalin, Centrum Rozwoju Dziecka, TPD Koszalin, sala integracji sensorycznej, biofeedback Koszalin, Kornela Makuszyńskiego 2 Koszalin, Klawiszelove">
+    <meta name="author" content="Towarzystwo Przyjaciół Dzieci w Koszalinie">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://julkowo.pl/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julkowo.pl/">
+    <meta property="og:title" content="JULKOWO – Żłobek, Przedszkole, Centrum Rozwoju Dziecka w Koszalinie">
+    <meta property="og:description" content="Tu dziecko rozkwita z uśmiechem! Placówka TPD przy ul. Kornela Makuszyńskiego 2, 75-442 Koszalin. Małe grupy, sala SI, biofeedback i 11 etatowych specjalistów.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:locale" content="pl_PL">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JULKOWO – Żłobek, Przedszkole, Centrum Rozwoju Dziecka Koszalin">
+    <meta name="twitter:description" content="Tu dziecko rozkwita z uśmiechem! Nowoczesne przedszkole i żłobek TPD przy ul. Kornela Makuszyńskiego 2 w Koszalinie.">
+    <meta name="twitter:image" content="assets/images/logo.png">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23FDF8F0' stroke='%233FA574' stroke-width='4'/%3E%3Ctext y='58' x='50' text-anchor='middle' font-family='sans-serif' font-size='38'%3E🌼%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Przyjazne połączenie Nunito i Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            coral: '#E86A58',
+                            coralLight: '#FDEEEB',
+                            yellow: '#F5B041',
+                            yellowLight: '#FEF6E9',
+                            green: '#3FA574',
+                            greenLight: '#EBF6F0',
+                            blue: '#4D96D9',
+                            blueLight: '#EDF5FC',
+                            sand: '#FCF9F3',
+                            dark: '#263238'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Nunito', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                        '5xl': '2.5rem'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Style mikrodekoracji i animacji -->
+    <style>
+        .blob-bg {
+            background-image: radial-gradient(circle at 10% 20%, rgba(245, 176, 65, 0.12) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 30%, rgba(63, 165, 116, 0.12) 0%, transparent 45%),
+                              radial-gradient(circle at 50% 80%, rgba(77, 150, 217, 0.1) 0%, transparent 50%);
+        }
+        .soft-shadow {
+            box-shadow: 0 15px 35px -5px rgba(38, 50, 56, 0.06), 0 5px 15px -3px rgba(38, 50, 56, 0.03);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -10px rgba(38, 50, 56, 0.12);
+        }
+        @keyframes float-gentle {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(1.5deg); }
+        }
+        .animate-float {
+            animation: float-gentle 5s ease-in-out infinite;
+        }
+    </style>
+
+    <!-- Ustrukturyzowane dane Schema.org (ChildCare) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ChildCare",
+      "name": "JULKOWO – Żłobek, Przedszkole, Centrum Rozwoju Dziecka",
+      "alternateName": "Przedszkole i Żłobek JULKOWO TPD Koszalin",
+      "description": "Nowoczesne przedszkole i żłobek prowadzone przez Towarzystwo Przyjaciół Dzieci w Koszalinie. Zapewniamy 11 etatowych specjalistów, salę integracji sensorycznej i biofeedback.",
+      "url": "https://julkowo.pl/",
+      "telephone": "+48943425627",
+      "email": "przedszkola@tpd24.pl",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Kornela Makuszyńskiego 2",
+        "addressLocality": "Koszalin",
+        "postalCode": "75-442",
+        "addressCountry": "PL"
+      },
+      "parentOrganization": {
+        "@type": "NonprofitOrganization",
+        "name": "Towarzystwo Przyjaciół Dzieci Koszalin",
+        "url": "https://julkowo.pl",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. M.J. Piłsudskiego 11-15",
+          "addressLocality": "Koszalin",
+          "postalCode": "75-501",
+          "addressCountry": "PL"
+        }
+      },
+      "openingHours": "Mo-Fr 06:30-17:00",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Edukacja i opieka przedszkolna i żłobkowa",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Opieka żłobkowa z adaptacją i terapią zmysłów"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Edukacja przedszkolna z 11 etatowymi specjalistami"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-brand-sand text-brand-dark font-sans antialiased selection:bg-brand-yellow/30 selection:text-brand-dark">
+
+    <!-- Górny pasek ogłoszeniowy (bez daty otwarcia i bez wzmianki o KSM) -->
+    <aside class="bg-gradient-to-r from-brand-coral via-brand-yellow to-brand-green text-white text-xs md:text-sm font-semibold tracking-wide py-2.5 px-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center bg-white/20 px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider">Rekrutacja</span>
+                <span>🌼 <strong>Trwają zapisy do żłobka i przedszkola!</strong> Koszalin, ul. Kornela Makuszyńskiego 2</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:943425627" class="hover:underline flex items-center gap-1 font-bold">
+                    <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <span>94 342 56 27</span>
+                </a>
+                <span class="hidden sm:inline">|</span>
+                <span class="hidden sm:inline text-white/95">Towarzystwo Przyjaciół Dzieci</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Główny Nagłówek i Nawigacja -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                
+                <!-- Logo Placówki -->
+                <a href="#start" class="flex items-center gap-3.5 group">
+                    <div class="relative w-14 h-14 md:w-16 md:h-16 flex-shrink-0 bg-brand-yellowLight rounded-2xl p-1 border-2 border-brand-yellow/30 overflow-hidden flex items-center justify-center transition-transform group-hover:scale-105">
+                        <img src="assets/images/logo.png" 
+                             alt="Logo JULKOWO Żłobek Przedszkole Koszalin" 
+                             class="w-full h-full object-contain"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div style="display:none;" class="w-full h-full flex flex-col items-center justify-center text-center p-1">
+                            <span class="text-xl">🌼</span>
+                            <span class="text-[9px] font-black leading-none text-brand-coral uppercase tracking-tighter">JULKOWO</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="block font-display font-extrabold text-2xl md:text-3xl tracking-tight text-brand-dark group-hover:text-brand-coral transition-colors">
+                            JULKOWO
+                        </span>
+                        <span class="block text-[11px] md:text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                            Żłobek • Przedszkole • Centrum Rozwoju
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Nawigacja Desktop (przejrzysta i odciążona) -->
+                <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2 font-medium text-sm text-gray-700">
+                    <a href="#o-nas" class="px-3.5 py-2 rounded-xl hover:text-brand-coral hover:bg-brand-coralLight transition-colors">O nas</a>
+                    <a href="#atuty" class="px-3.5 py-2 rounded-xl hover:text-brand-green hover:bg-brand-greenLight transition-colors">Atuty</a>
+                    <a href="#programy" class="px-3.5 py-2 rounded-xl hover:text-brand-yellow hover:bg-brand-yellowLight transition-colors">Programy</a>
+                    <a href="#galeria" class="px-3.5 py-2 rounded-xl hover:text-brand-coral hover:bg-brand-coralLight transition-colors">Galeria</a>
+                </nav>
+
+                <!-- Przyciski akcji (Desktop) -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="tel:943425627" class="hidden xl:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-bold text-brand-dark bg-stone-100 hover:bg-stone-200 rounded-xl transition-all">
+                        <svg class="w-4 h-4 text-brand-coral" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+                        <span>94 342 56 27</span>
+                    </a>
+                    <a href="#kontakt" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-display font-bold text-sm text-white bg-brand-coral hover:bg-brand-coral/90 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Zapisy i Kontakt 🎈
+                    </a>
+                </div>
+
+                <!-- Hamburger Mobile -->
+                <button id="mobileMenuBtn" type="button" aria-label="Otwórz menu nawigacji" class="lg:hidden p-2.5 rounded-xl text-gray-700 hover:text-brand-coral hover:bg-stone-100 focus:outline-none">
+                    <svg id="menuIconClosed" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                    <svg id="menuIconOpen" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Menu Mobilne Rozwijane (odciążone) -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-stone-200 px-4 pt-3 pb-6 space-y-2">
+            <a href="#o-nas" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-gray-800 hover:bg-brand-coralLight hover:text-brand-coral">O nas</a>
+            <a href="#atuty" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-gray-800 hover:bg-brand-greenLight hover:text-brand-green">Atuty placówki</a>
+            <a href="#programy" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-gray-800 hover:bg-brand-yellowLight hover:text-brand-yellow">Programy edukacyjne</a>
+            <a href="#galeria" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-medium text-gray-800 hover:bg-brand-coralLight hover:text-brand-coral">Galeria</a>
+            <div class="pt-3 border-t border-stone-100 flex flex-col gap-2.5">
+                <a href="#kontakt" class="mobile-nav-link w-full text-center py-3 rounded-xl font-display font-bold text-white bg-brand-coral shadow">
+                    Zapisy i Kontakt 🎈
+                </a>
+                <a href="tel:943425627" class="w-full text-center py-2.5 rounded-xl font-semibold text-brand-dark bg-stone-100 hover:bg-stone-200">
+                    Zadzwoń: 94 342 56 27
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEKCJA HERO -->
+    <main>
+    <section id="start" class="relative overflow-hidden pt-8 pb-16 md:py-20 lg:py-24 blob-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Lewa kolumna: Hasła, Informacje, CTA -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Etykieta statusu i adresu -->
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-extrabold bg-brand-yellow/20 text-yellow-800 border border-brand-yellow/40">
+                            <span class="w-2 h-2 rounded-full bg-brand-yellow animate-ping"></span>
+                            Małe grupy – wielkie możliwości
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-white text-gray-600 border border-stone-200 shadow-sm">
+                            📍 ul. Kornela Makuszyńskiego 2, 75-442 Koszalin
+                        </span>
+                    </div>
+
+                    <!-- Główny Nagłówek -->
+                    <div class="space-y-3">
+                        <p class="font-display font-extrabold text-sm md:text-base uppercase tracking-widest text-brand-coral">
+                            Centrum Rozwoju Dziecka • Żłobek • Przedszkole
+                        </p>
+                        <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-brand-dark leading-[1.12] tracking-tight">
+                            TU DZIECKO ROZKWITA <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-coral via-brand-yellow to-brand-green">
+                                Z UŚMIECHEM!
+                            </span>
+                        </h1>
+                    </div>
+
+                    <!-- Podtytuł i opis -->
+                    <p class="text-lg md:text-xl text-gray-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Bezpieczna, ciepła przystań pełna miłości, twórczej zabawy i profesjonalnego wsparcia. 
+                        Tworzymy miejsce, w którym <strong class="text-brand-dark font-semibold">małe grupy dają wielkie możliwości</strong> wszechstronnego rozwoju każdego malucha.
+                    </p>
+
+                    <!-- Odznaka zaufania: TPD -->
+                    <div class="p-4 rounded-2xl bg-white/80 backdrop-blur border border-stone-200/80 shadow-sm inline-block text-left w-full sm:w-auto">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-greenLight text-brand-green flex items-center justify-center font-bold text-lg flex-shrink-0">
+                                🤝
+                            </div>
+                            <div class="text-xs sm:text-sm text-gray-700">
+                                <span class="font-bold text-brand-dark block">Placówka Towarzystwa Przyjaciół Dzieci</span>
+                                <span>Wojewódzki Lider Akademii Rozwoju Żłobków</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Przyciski akcji -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#kontakt" class="w-full sm:w-auto text-center px-8 py-4 rounded-2xl font-display font-black text-base text-white bg-brand-coral hover:bg-brand-coral/95 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                            Informacje i Zapisy 🎈
+                        </a>
+                        <a href="#atuty" class="w-full sm:w-auto text-center px-7 py-4 rounded-2xl font-display font-bold text-base text-brand-dark bg-white hover:bg-stone-50 border border-stone-200 shadow-sm transition-all hover:border-brand-green">
+                            Poznaj nasze atuty ↓
+                        </a>
+                    </div>
+
+                    <!-- Kluczowe punkty w pigułce -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 border-t border-stone-200/60 text-xs font-semibold text-gray-600">
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <span class="text-brand-green text-base">✓</span> 11 etatowych specjalistów
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start">
+                            <span class="text-brand-coral text-base">✓</span> Własna sala sensoryczna
+                        </div>
+                        <div class="flex items-center gap-2 justify-center lg:justify-start col-span-2 sm:col-span-1">
+                            <span class="text-brand-blue text-base">✓</span> Niskie czesne TPD
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Prawa kolumna: Prezentacja wizualna / Załączone logo -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-6 -right-6 w-72 h-72 bg-brand-yellow/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-8 -left-8 w-72 h-72 bg-brand-green/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="relative bg-white p-6 sm:p-8 rounded-4xl sm:rounded-5xl soft-shadow border-4 border-white">
+                        
+                        <!-- Główny podgląd graficzny / Załączone logo -->
+                        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-b from-brand-sand via-white to-brand-greenLight p-4 flex flex-col items-center text-center">
+                            
+                            <img src="gfx/logoweb.jpg" 
+                                 alt="JULKOWO Żłobek Przedszkole Centrum Rozwoju Dziecka Koszalin" 
+                                 class="w-full max-w-[340px] h-auto object-contain drop-shadow-md mx-auto"
+                                 onerror="this.src='https://placehold.co/600x600/FEF6E9/E86A58?text=JULKOWO%0A%C5%BB%C5%82obek+%26+Przedszkole';"
+                            >
+
+                            <!-- Pływająca plakietka -->
+                            <div class="mt-4 w-full bg-white/95 backdrop-blur rounded-2xl p-3 border border-stone-100 shadow-sm flex items-center justify-between">
+                                <div class="text-left">
+                                    <span class="text-[11px] font-bold uppercase text-brand-green block">Ogród i warzywnik</span>
+                                    <span class="text-xs font-extrabold text-brand-dark">Zajęcia na świeżym powietrzu</span>
+                                </div>
+                                <span class="text-2xl">🌱</span>
+                            </div>
+                        </div>
+
+                        <!-- Pływające mikro-karty dookoła -->
+                        <div class="absolute -bottom-4 -left-3 sm:-left-6 bg-white py-2.5 px-4 rounded-2xl shadow-lg border border-stone-100 flex items-center gap-2.5 animate-float">
+                            <span class="w-8 h-8 rounded-xl bg-brand-blueLight text-brand-blue flex items-center justify-center text-base font-bold">🎵</span>
+                            <div>
+                                <p class="text-[11px] text-gray-500 font-semibold leading-none">Język angielski</p>
+                                <p class="text-xs font-extrabold text-brand-dark">Klawiszelove</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-4 -right-2 sm:-right-4 bg-white py-2.5 px-4 rounded-2xl shadow-lg border border-stone-100 flex items-center gap-2.5">
+                            <span class="w-8 h-8 rounded-xl bg-brand-yellowLight text-brand-yellow flex items-center justify-center text-base font-bold">⭐</span>
+                            <div>
+                                <p class="text-[11px] text-gray-500 font-semibold leading-none">Standard jakości</p>
+                                <p class="text-xs font-extrabold text-brand-dark">Teachstone CLASS</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA MISJA TPD -->
+    <section id="o-nas" class="py-14 bg-white border-y border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-sand to-white rounded-3xl p-6 sm:p-10 border border-stone-200/80 shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="inline-flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-brand-coral bg-brand-coralLight px-3 py-1 rounded-full">
+                            Tradycja, zaufanie i profesjonalizm
+                        </div>
+                        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-brand-dark">
+                            Żłobek i Przedszkole prowadzone przez Towarzystwo Przyjaciół Dzieci
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                            Towarzystwo Przyjaciół Dzieci w Koszalinie to <strong>Wojewódzki Lider Akademii Rozwoju Żłobków</strong>. 
+                            Od dziesięcioleci tworzymy środowisko, w którym każde dziecko czuje się bezpieczne, zauważone i docenione. 
+                            Placówka <strong>„JULKOWO – Żłobek, Przedszkole, Centrum Rozwoju Dziecka”</strong> przy <strong>ul. Kornela Makuszyńskiego 2, 75-442 Koszalin</strong> 
+                            oferuje rodzinom nowoczesne zaplecze opiekuńczo-edukacyjne, bogatą ofertę terapeutyczną i unikalne zajęcia autorskie.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-4 grid grid-cols-2 gap-4 text-center">
+                        <div class="p-4 rounded-2xl bg-white border border-stone-100 shadow-sm">
+                            <span class="block font-display font-black text-3xl text-brand-coral">11</span>
+                            <span class="text-xs font-bold text-gray-600 mt-1 block">Specjalistów na etacie</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-stone-100 shadow-sm">
+                            <span class="block font-display font-black text-3xl text-brand-green">100%</span>
+                            <span class="text-xs font-bold text-gray-600 mt-1 block">Zaangażowania & Pasji</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-stone-100 shadow-sm">
+                            <span class="block font-display font-black text-3xl text-brand-blue">SI</span>
+                            <span class="text-xs font-bold text-gray-600 mt-1 block">Sala Sensoryczna</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-white border border-stone-100 shadow-sm">
+                            <span class="block font-display font-black text-3xl text-brand-yellow">TPD</span>
+                            <span class="text-xs font-bold text-gray-600 mt-1 block">Lider Rozwoju</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA ATUTY PLACÓWKI (KARTY ZALET) -->
+    <section id="atuty" class="py-20 bg-brand-sand relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-green bg-brand-greenLight px-3.5 py-1.5 rounded-full inline-block">
+                    Dlaczego JULKOWO to najlepszy wybór?
+                </span>
+                <h2 class="font-display font-black text-3xl sm:text-4xl text-brand-dark">
+                    Nasze Atuty – Standard, na który zasługuje Twój Maluch
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Łączymy domowe ciepło z unikalnym zapleczem diagnostyczno-terapeutycznym i bogatą ofertą twórczą.
+                </p>
+            </div>
+
+            <!-- Siatka 8 kluczowych atutów -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- 1. Ciepła rodzinna atmosfera -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-coralLight text-brand-coral flex items-center justify-center text-2xl mb-4">
+                            🏡
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Ciepła, Rodzinna Atmosfera</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Bezstresowa adaptacja, empatyczne ciocie i nauczyciele. Budujemy poczucie bezpieczeństwa, akceptacji i zaufania od pierwszego dnia.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-coral uppercase tracking-wider block">Spokojny rozwój</span>
+                </div>
+
+                <!-- 2. Kreatywne zajęcia -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-yellowLight text-brand-yellow flex items-center justify-center text-2xl mb-4">
+                            🎨
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Kreatywne Zajęcia Każdego Dnia</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Eksperymenty, plastyka sensoryczna, teatr, ruch i odkrywanie świata wszystkimi zmysłami. U nas nuda nie istnieje!
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-yellow uppercase tracking-wider block">Twórcza ekspresja</span>
+                </div>
+
+                <!-- 3. Nowoczesne, Przestronne Sale -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-blueLight text-brand-blue flex items-center justify-center text-2xl mb-4">
+                            🏫
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Nowoczesne Przestronne Sale</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Jasne, ergonomiczne i atestowane wyposażenie dopasowane do wzrostu i potrzeb dzieci. Przestrzeń sprzyjająca swobodnej zabawie.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-blue uppercase tracking-wider block">Komfort & Higiena</span>
+                </div>
+
+                <!-- 4. Własna sala integracji sensorycznej -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-brand-green/30 card-hover flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute -right-2 -top-2 bg-brand-green text-white text-[10px] font-extrabold uppercase px-3 py-1 rounded-bl-xl">Unikat</div>
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-greenLight text-brand-green flex items-center justify-center text-2xl mb-4">
+                            🌈
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Sala Integracji Sensorycznej</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Własna sala SI i Doświadczania Świata. Specjalistyczny sprzęt stymulujący zmysły, równowagę i koordynację pod okiem terapeutów.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-green uppercase tracking-wider block">Terapia na miejscu</span>
+                </div>
+
+                <!-- 5. Własny plac zabaw z ogródkiem -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-greenLight text-brand-green flex items-center justify-center text-2xl mb-4">
+                            🥕
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Plac Zabaw z Warzywnikiem</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Duży, bezpieczny teren zielony z własnym ogródkiem warzywnym i miejscem piknikowym. Dzieci sieją, pielęgnują i zbierają plony!
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-green uppercase tracking-wider block">Bliskość natury</span>
+                </div>
+
+                <!-- 6. Gabinet Biofeedback -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-4">
+                            🧠
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Gabinet Biofeedback</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Nowoczesny trening fal mózgowych EEG-Biofeedback poprawiający koncentrację, pamięć, wyciszenie i odporność na stres.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-purple-600 uppercase tracking-wider block">Nowoczesna neuroterapia</span>
+                </div>
+
+                <!-- 7. Zdrowy Catering DOMIR -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-yellowLight text-brand-yellow flex items-center justify-center text-2xl mb-4">
+                            🥣
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Zdrowe Posiłki DOMIR</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Smaczne, zbilansowane dania przygotowywane przez uznany <strong>DOMIR Catering Adrianna Andrusieczko</strong>. Z uwzględnieniem diet i alergii.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-yellow uppercase tracking-wider block">Zdrowe nawyki</span>
+                </div>
+
+                <!-- 8. Niskie czesne i TPD -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-100 card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-coralLight text-brand-coral flex items-center justify-center text-2xl mb-4">
+                            💛
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-brand-dark mb-2">Niskie Czesne & Dofinansowania</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Jako organizacja pożytku publicznego dbamy o dostępność dla wszystkich rodzin. Korzystamy ze wsparcia programów miejskich i rządowych.
+                        </p>
+                    </div>
+                    <span class="mt-4 text-xs font-bold text-brand-coral uppercase tracking-wider block">Przyjazne czesne</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCJA PROGRAMY EDUKACYJNE I ZAJĘCIA AUTORSKIE -->
+    <section id="programy" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-blue bg-brand-blueLight px-3.5 py-1.5 rounded-full inline-block">
+                    Innowacyjna Dydaktyka
+                </span>
+                <h2 class="font-display font-black text-3xl sm:text-4xl text-brand-dark">
+                    Autorskie Programy Edukacyjne i Artystyczne
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Wspieramy naturalną ciekawość dzieci poprzez muzykę na żywo, język angielski i codzienny kontakt z przyrodą.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Karta 1: Dzieci mają wychodne -->
+                <div class="bg-brand-sand rounded-3xl p-8 border border-stone-200/80 flex flex-col justify-between relative overflow-hidden group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-green text-white flex items-center justify-center text-2xl shadow-md">
+                            🌲
+                        </div>
+                        <span class="inline-block text-xs font-extrabold uppercase tracking-wider text-brand-green">
+                            Fundacja Rozwoju Dzieci im. Komeńskiego
+                        </span>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark">
+                            Program „Dzieci Mają Wychodne”
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Nasza placówka bierze udział w ogólnopolskim programie edukacji w plenerze. Regularne wyjścia bez względu na pogodę budują odporność biologiczną, samodzielność i szacunek do natury.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-4 border-t border-stone-200 text-xs font-semibold text-gray-700 space-y-2">
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Codzienne spacery i leśne wyprawy</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-green">✓</span> Obserwacje mikroskopowe w ogródku</li>
+                    </ul>
+                </div>
+
+                <!-- Karta 2: Muzyczny Angielski KLAWISZOWELOVE -->
+                <div class="bg-brand-coralLight/40 rounded-3xl p-8 border border-brand-coral/20 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-coral text-white flex items-center justify-center text-2xl shadow-md">
+                            🎹
+                        </div>
+                        <span class="inline-block text-xs font-extrabold uppercase tracking-wider text-brand-coral">
+                            Klawiszelove • Maciej Osada Sobczyński
+                        </span>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark">
+                            Muzyczny Język Angielski
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Autorskie zajęcia językowe połączone z muzyką na żywo pod okiem Macieja Osady Sobczyńskiego. Dzieci przyswajają angielski naturalnie – śpiewając, tańcząc i improwizując przy pianinie.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-4 border-t border-brand-coral/20 text-xs font-semibold text-gray-700 space-y-2">
+                        <li class="flex items-center gap-2"><span class="text-brand-coral">✓</span> Zanurzenie w melodyce języka</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-coral">✓</span> Żywy akompaniament muzyczny</li>
+                    </ul>
+                </div>
+
+                <!-- Karta 3: Rytmika & Standard Teachstone CLASS -->
+                <div class="bg-brand-blueLight/50 rounded-3xl p-8 border border-brand-blue/20 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-blue text-white flex items-center justify-center text-2xl shadow-md">
+                            🥁
+                        </div>
+                        <span class="inline-block text-xs font-extrabold uppercase tracking-wider text-brand-blue">
+                            Rytmika + Teachstone CLASS
+                        </span>
+                        <h3 class="font-display font-bold text-2xl text-brand-dark">
+                            Rytmika z Instrumentami & CLASS
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Zajęcia rytmiczne z bogatym instrumentarium prowadzone przez profesjonalnego nauczyciela muzyki. Jakość relacji nauczyciel–dziecko monitoruje <strong>Certyfikowany Obserwator Teachstone CLASS</strong>.
+                        </p>
+                    </div>
+                    <ul class="mt-6 pt-4 border-t border-brand-blue/20 text-xs font-semibold text-gray-700 space-y-2">
+                        <li class="flex items-center gap-2"><span class="text-brand-blue">✓</span> Gra na dzwonkach, bębenkach, marakasach</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-blue">✓</span> Światowy standard jakości interakcji CLASS</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCJA ZESPÓŁ SPECJALISTÓW (11 ETATÓW) -->
+    <section id="specjalisci" class="py-20 bg-brand-sand relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral bg-brand-coralLight px-3.5 py-1.5 rounded-full inline-block">
+                    Wszechstronne Wsparcie Dziecka i Rodziny
+                </span>
+                <h2 class="font-display font-black text-3xl sm:text-4xl text-brand-dark">
+                    Zespół 11 Etatowych Specjalistów na Miejscu
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    W Julkowie rodzic nie musi szukać pomocy w zewnętrznych poradniach. Nasi wykwalifikowani eksperci pracują z dziećmi na co dzień w ramach czesnego.
+                </p>
+            </div>
+
+            <!-- Prezentacja kafelkowa 11 specjalistów -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-rose-50 text-rose-500 flex items-center justify-center text-xl mb-3">💬</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Psycholog</h4>
+                    <p class="text-xs text-gray-500 mt-1">Wsparcie emocjonalne, adaptacja i rozwój społeczny</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-blue-50 text-blue-500 flex items-center justify-center text-xl mb-3">🗣️</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Logopeda</h4>
+                    <p class="text-xs text-gray-500 mt-1">Korekcja wymowy, profilaktyka i stymulacja mowy</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-green-50 text-green-500 flex items-center justify-center text-xl mb-3">🧩</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Pedagog Specjalny</h4>
+                    <p class="text-xs text-gray-500 mt-1">Indywidualne ścieżki i dostosowanie programowe</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-amber-50 text-amber-500 flex items-center justify-center text-xl mb-3">👁️</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Tyflopedagog</h4>
+                    <p class="text-xs text-gray-500 mt-1">Wsparcie i rehabilitacja wzroku u dzieci</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-cyan-50 text-cyan-500 flex items-center justify-center text-xl mb-3">👂</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Surdopedagog</h4>
+                    <p class="text-xs text-gray-500 mt-1">Wspomaganie percepcji słuchowej i komunikacji</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-purple-50 text-purple-500 flex items-center justify-center text-xl mb-3">🌱</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Oligofrenopedagog</h4>
+                    <p class="text-xs text-gray-500 mt-1">Edukacja i rewalidacja dzieci ze szczególnymi potrzebami</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-red-50 text-red-500 flex items-center justify-center text-xl mb-3">👨‍👩‍👧</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Pedagog Rodziny</h4>
+                    <p class="text-xs text-gray-500 mt-1">Konsultacje dla rodziców i warsztaty wychowawcze</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-pink-50 text-pink-500 flex items-center justify-center text-xl mb-3">🎶</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Muzykoterapeuta</h4>
+                    <p class="text-xs text-gray-500 mt-1">Terapia dźwiękiem, wyciszanie i relaksacja</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-indigo-50 text-indigo-500 flex items-center justify-center text-xl mb-3">⚡</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Terapeuta Biofeedback</h4>
+                    <p class="text-xs text-gray-500 mt-1">Trening koncentracji i samoregulacji fal EEG</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-5 border border-stone-100 shadow-sm text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-yellow-50 text-yellow-600 flex items-center justify-center text-xl mb-3">🎼</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Nauczyciel Muzyki</h4>
+                    <p class="text-xs text-gray-500 mt-1">Profesjonalna edukacja rytmiczno-muzyczna</p>
+                </div>
+
+                <div class="col-span-2 sm:col-span-3 lg:col-span-2 bg-gradient-to-r from-brand-greenLight to-white rounded-2xl p-5 border border-brand-green/30 shadow-sm text-center flex flex-col justify-center items-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white flex items-center justify-center text-xl mb-2">⭐</div>
+                    <h4 class="font-display font-bold text-base text-brand-dark">Obserwator Teachstone CLASS</h4>
+                    <p class="text-xs text-gray-600 mt-1">Certyfikowany audyt jakości relacji nauczyciel-dziecko wg standardu USA</p>
+                </div>
+
+            </div>
+
+            <!-- Informacja uzupełniająca -->
+            <div class="mt-10 text-center">
+                <p class="text-xs sm:text-sm text-gray-600 font-medium bg-white/70 backdrop-blur py-3 px-6 rounded-full inline-block border border-stone-200">
+                    ✨ Zespół Julkowa to doświadczona, kierunkowo wykształcona i regularnie dokształcana kadra pedagogiczna.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCJA GALERIA / WIRTUALNY SPACER PO PLACÓWCE -->
+    <section id="galeria" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-brand-yellow bg-brand-yellowLight px-3.5 py-1.5 rounded-full inline-block mb-3">
+                        Przestrzeń Pełna Światła i Zabawy
+                    </span>
+                    <h2 class="font-display font-black text-3xl sm:text-4xl text-brand-dark">
+                        Poznaj Przestrzeń JULKOWA
+                    </h2>
+                    <p class="text-gray-600 text-sm sm:text-base mt-2">
+                        Zobacz jak przygotowaliśmy sale, ogród i gabinety terapeutyczne przy ul. Kornela Makuszyńskiego 2 w Koszalinie.
+                    </p>
+                </div>
+
+                <!-- Przyciski filtrów galerii -->
+                <div class="flex flex-wrap gap-2 text-xs font-bold" id="galleryFilters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl bg-brand-coral text-white transition-all">Wszystkie</button>
+                    <button data-filter="sale" class="filter-btn px-4 py-2 rounded-xl bg-stone-100 text-gray-700 hover:bg-stone-200 transition-all">Sale Przedszkola i Żłobka</button>
+                    <button data-filter="sensoryka" class="filter-btn px-4 py-2 rounded-xl bg-stone-100 text-gray-700 hover:bg-stone-200 transition-all">Sala SI & Biofeedback</button>
+                    <button data-filter="ogrod" class="filter-btn px-4 py-2 rounded-xl bg-stone-100 text-gray-700 hover:bg-stone-200 transition-all">Plac Zabaw & Ogródek</button>
+                </div>
+            </div>
+
+            <!-- Siatka zdjęć galerii z placeholderami i opisami -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+
+                <!-- Zdjęcie 1: Sale -->
+                <div class="gallery-item sale group relative overflow-hidden rounded-3xl bg-stone-100 border border-stone-200 aspect-[4/3] cursor-pointer" onclick="openLightbox('gfx/sala-glowna.jpg', 'Nowoczesne, przestronne i jasne sale dydaktyczne')">
+                    <img src="gfx/sala-glowna.jpg" 
+                         alt="Nowoczesna sala przedszkolna Julkowo Koszalin" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.src='https://placehold.co/800x600/FEF6E9/E86A58?text=Nowoczesna+Sala+Dydaktyczna';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-yellow">Edukacja i Zabawa</span>
+                        <h4 class="font-display font-bold text-lg">Przestronne, jasne sale zajęciowe</h4>
+                        <p class="text-xs text-white/80 mt-1">Atestowane zabawki, bezpieczne kąciki tematyczne i naturalne światło</p>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 2: Sensoryka -->
+                <div class="gallery-item sensoryka group relative overflow-hidden rounded-3xl bg-stone-100 border border-stone-200 aspect-[4/3] cursor-pointer" onclick="openLightbox('assets/images/sala-si.jpg', 'Własna sala integracji sensorycznej i doświadczania świata')">
+                    <img src="assets/images/sala-si.jpg" 
+                         alt="Sala Integracji Sensorycznej Julkowo Koszalin" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.src='https://placehold.co/800x600/EBF6F0/3FA574?text=Sala+Integracji+Sensorycznej+SI';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-green">Terapia i Zmysły</span>
+                        <h4 class="font-display font-bold text-lg">Własna Sala SI i Doświadczania Świata</h4>
+                        <p class="text-xs text-white/80 mt-1">Podwieszany sprzęt terapeutyczny, kolumny wodne i basen z kulkami</p>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 3: Plac zabaw -->
+                <div class="gallery-item ogrod group relative overflow-hidden rounded-3xl bg-stone-100 border border-stone-200 aspect-[4/3] cursor-pointer" onclick="openLightbox('gfx/plac-zabaw.jpg', 'Bezpieczny plac zabaw z warzywnym ogródkiem i strefą piknikową')">
+                    <img src="gfx/plac-zabaw.jpg" 
+                         alt="Plac zabaw z ogrodem warzywnym Julkowo" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.src='https://placehold.co/800x600/EDF5FC/4D96D9?text=Plac+Zabaw+%2B+Ogr%C3%B3dek+Warzywny';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-blue">Świeże Powietrze</span>
+                        <h4 class="font-display font-bold text-lg">Plac Zabaw z Ogródkiem Warzywnym</h4>
+                        <p class="text-xs text-white/80 mt-1">Własne grządki warzywne, strefa piknikowa i zielona trawka na zewnątrz</p>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 4: Żłobek maluchy -->
+                <div class="gallery-item sale group relative overflow-hidden rounded-3xl bg-stone-100 border border-stone-200 aspect-[4/3] cursor-pointer" onclick="openLightbox('gfx/zlobek-sala.jpg', 'Bezpieczna sala maluszków żłobkowych z miękką strefą relaksu')">
+                    <img src="gfx/zlobek-sala.jpg" 
+                         alt="Sala żłobkowa Julkowo Koszalin" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.src='https://placehold.co/800x600/FDEEEB/E86A58?text=Bezpieczna+Strefa+%C5%BB%C5%82obkowa';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-coral">Dla Najmłodszych</span>
+                        <h4 class="font-display font-bold text-lg">Przytulny Świat Maluszka</h4>
+                        <p class="text-xs text-white/80 mt-1">Dedykowane łóżeczka, materace do raczkowania i strefa wyciszenia</p>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 5: Biofeedback -->
+                <div class="gallery-item sensoryka group relative overflow-hidden rounded-3xl bg-stone-100 border border-stone-200 aspect-[4/3] cursor-pointer" onclick="openLightbox('gfx/biofeedback.jpg', 'Profesjonalny gabinet Biofeedback EEG do treningu koncentracji')">
+                    <img src="gfx/biofeedback.jpg" 
+                         alt="Gabinet Biofeedback Julkowo" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.src='https://placehold.co/800x600/FAF5FF/9333EA?text=Gabinet+EEG+Biofeedback';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-purple-400">Technologia dla Mózgu</span>
+                        <h4 class="font-display font-bold text-lg">Gabinet Biofeedback EEG</h4>
+                        <p class="text-xs text-white/80 mt-1">Przyjazny fotel terapeutyczny, interaktywne gry biofeedbackowe</p>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 6: Ogród i piknik -->
+                <div class="gallery-item ogrod group relative overflow-hidden rounded-3xl bg-stone-100 border border-stone-200 aspect-[4/3] cursor-pointer" onclick="openLightbox('gfx/piknik.jpg', 'Miejsce piknikowe i strefa zajęć na świeżym powietrzu')">
+                    <img src="gfx/piknik.jpg" 
+                         alt="Strefa piknikowa Julkowo" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                         onerror="this.src='https://placehold.co/800x600/FEF6E9/F5B041?text=Miejsce+Piknikowe+w+Ogrodzie';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end text-white">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-yellow">Dzieci Mają Wychodne</span>
+                        <h4 class="font-display font-bold text-lg">Strefa Piknikowa i Odpoczynku</h4>
+                        <p class="text-xs text-white/80 mt-1">Wspólne drugie śniadania na trawie i czytanie bajek pod chmurką</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCJA REKRUTACJA I ZAPISY (BEZ FORMULARZA – PROSTY KONTAKT BEZPOŚREDNI) -->
+    <section class="py-20 bg-gradient-to-b from-brand-sand via-white to-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Lewa kolumna: Informacje o naborze i 3 proste kroki -->
+                <div class="lg:col-span-6 space-y-8">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral bg-brand-coralLight px-3.5 py-1.5 rounded-full inline-block mb-3">
+                            Dołącz do Rodziny Julkowa
+                        </span>
+                        <h2 class="font-display font-black text-3xl sm:text-4xl text-brand-dark">
+                            Jak Zapisać Dziecko do Placówki?
+                        </h2>
+                        <p class="text-gray-600 text-sm sm:text-base mt-3 leading-relaxed">
+                            Zapewniamy kameralną opiekę zgodnie z naszą zasadą: <em>„Małe grupy – wielkie możliwości”</em>. 
+                            Aby zapewnić komfort każdemu maluchowi, liczba miejsc jest ograniczona. Skontaktuj się z nami bezpośrednio, aby złożyć kartę zgłoszeniową.
+                        </p>
+                    </div>
+
+                    <!-- 3 Kroki Zapisów -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200 shadow-sm">
+                            <span class="w-10 h-10 rounded-xl bg-brand-coral text-white font-display font-black text-lg flex items-center justify-center flex-shrink-0">1</span>
+                            <div>
+                                <h4 class="font-display font-bold text-base text-brand-dark">Kontakt telefoniczny lub mailowy</h4>
+                                <p class="text-xs text-gray-500 mt-1">Zadzwoń do biura TPD pod numer <strong>94 342 56 27</strong> lub napisz na <strong>przedszkola@tpd24.pl</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200 shadow-sm">
+                            <span class="w-10 h-10 rounded-xl bg-brand-yellow text-brand-dark font-display font-black text-lg flex items-center justify-center flex-shrink-0">2</span>
+                            <div>
+                                <h4 class="font-display font-bold text-base text-brand-dark">Złożenie karty zgłoszeniowej</h4>
+                                <p class="text-xs text-gray-500 mt-1">Wypełnij kartę dziecka w biurze TPD przy ul. M.J. Piłsudskiego 11-15 lub pobierz ją ze strony.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200 shadow-sm">
+                            <span class="w-10 h-10 rounded-xl bg-brand-green text-white font-display font-black text-lg flex items-center justify-center flex-shrink-0">3</span>
+                            <div>
+                                <h4 class="font-display font-bold text-base text-brand-dark">Spokojna adaptacja</h4>
+                                <p class="text-xs text-gray-500 mt-1">Ustalamy termin spotkania i serdecznie zapraszamy rodzica z dzieckiem na bezstresową adaptację.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prawa kolumna: Karta szybkiego kontaktu z dyżurem telefonicznym -->
+                <div class="lg:col-span-6 bg-white rounded-3xl p-8 sm:p-10 border border-stone-200 shadow-xl space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-coralLight text-brand-coral flex items-center justify-center text-3xl flex-shrink-0">
+                            📞
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-brand-coral uppercase tracking-wider">Bezpośredni kontakt</span>
+                            <h3 class="font-display font-black text-2xl text-brand-dark">Zadzwoń do Biura Zapisów</h3>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Nasi koordynatorzy chętnie odpowiedzą na wszystkie pytania dotyczące dostępności miejsc, grup wiekowych, diet, dofinansowań oraz zajęć terapeutycznych.
+                    </p>
+
+                    <!-- Duży klikalny blok telefonu -->
+                    <div class="p-5 rounded-2xl bg-brand-coralLight/60 border border-brand-coral/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs font-bold text-gray-600 block">Główny numer rekrutacyjny TPD:</span>
+                            <a href="tel:943425627" class="font-display font-black text-3xl text-brand-coral hover:underline">
+                                94 342 56 27
+                            </a>
+                        </div>
+                        <a href="tel:943425627" class="w-full sm:w-auto px-6 py-3 rounded-xl font-display font-bold text-white bg-brand-coral hover:bg-brand-coral/90 shadow text-center text-sm">
+                            Połącz teraz 📱
+                        </a>
+                    </div>
+
+                    <!-- Pudełko mailowe i adresowe -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-stone-50 border border-stone-200/70">
+                            <span class="text-xs font-bold text-gray-500 uppercase block mb-1">Adres E-mail:</span>
+                            <a href="mailto:przedszkola@tpd24.pl" class="text-sm font-extrabold text-brand-dark hover:text-brand-coral break-all">
+                                przedszkola@tpd24.pl
+                            </a>
+                        </div>
+                        <div class="p-4 rounded-xl bg-stone-50 border border-stone-200/70">
+                            <span class="text-xs font-bold text-gray-500 uppercase block mb-1">Strona internetowa:</span>
+                            <a href="https://julkowo.pl" target="_blank" rel="noopener" class="text-sm font-extrabold text-brand-dark hover:text-brand-coral">
+                                www.julkowo.pl
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-brand-blueLight/60 border border-brand-blue/30 text-xs text-gray-700 flex items-center gap-3">
+                        <span class="text-2xl">📍</span>
+                        <div>
+                            <strong class="text-brand-dark block">Biuro Towarzystwa Przyjaciół Dzieci:</strong>
+                            <span>ul. M.J. Piłsudskiego 11-15, 75-501 Koszalin (pon. - pt. 7:30 - 15:30)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCJA FAQ DLA RODZICÓW (ZACHOWANA Z ORYGINAŁU) -->
+    <section id="faq" class="py-16 bg-white border-y border-stone-200/80">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-green bg-brand-greenLight px-3.5 py-1.5 rounded-full inline-block">
+                    Wszystko co musisz wiedzieć
+                </span>
+                <h2 class="font-display font-black text-3xl text-brand-dark">
+                    Często Zadawane Pytania (FAQ)
+                </h2>
+                <p class="text-gray-600 text-sm">Odpowiedzi na najczęściej zadawane pytania przez rodziców.</p>
+            </div>
+
+            <!-- Akordeony FAQ -->
+            <div class="space-y-3" id="faqAccordion">
+
+                <!-- Pytanie 1 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all faq-card">
+                    <button type="button" class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-display font-bold text-base text-brand-dark bg-stone-50/50 hover:bg-stone-50">
+                        <span>Dla jakich grup wiekowych prowadzona jest rekrutacja i ile dzieci liczą grupy?</span>
+                        <span class="faq-icon text-brand-coral text-xl font-bold">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-sm text-gray-600 bg-white border-t border-stone-100">
+                        Prowadzimy rekrutację zarówno do <strong>Żłobka</strong> (maluszki od 1 do 3 lat), jak i do <strong>Przedszkola</strong> (dzieci od 3 do 6 lat). Naszą naczelną zasadą są małe, kameralne grupy, co gwarantuje każdemu dziecku poczucie intymności, bezpieczeństwa i maksymalne skupienie kadry na jego indywidualnym potencjale.
+                    </div>
+                </div>
+
+                <!-- Pytanie 2 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all faq-card">
+                    <button type="button" class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-display font-bold text-base text-brand-dark bg-stone-50/50 hover:bg-stone-50">
+                        <span>Czy zajęcia z 11 specjalistami są dodatkowo płatne?</span>
+                        <span class="faq-icon text-brand-coral text-xl font-bold">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-sm text-gray-600 bg-white border-t border-stone-100">
+                        <strong>Nie!</strong> Wszyscy specjaliści (m.in. psycholog, logopeda, surdo- i tyflopedagog, pedagog rodziny, muzykoterapeuta, terapeuta Biofeedback) to <strong>kadra etatowa</strong> zatrudniona bezpośrednio w placówce przez Towarzystwo Przyjaciół Dzieci. Obserwacja, profilaktyka i podstawowe terapie odbywają się w ramach codziennej opieki.
+                    </div>
+                </div>
+
+                <!-- Pytanie 3 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all faq-card">
+                    <button type="button" class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-display font-bold text-base text-brand-dark bg-stone-50/50 hover:bg-stone-50">
+                        <span>Jak wygląda żywienie dzieci? Czy realizujecie diety eliminacyjne?</span>
+                        <span class="faq-icon text-brand-coral text-xl font-bold">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-sm text-gray-600 bg-white border-t border-stone-100">
+                        Współpracujemy ze sprawdzonym partnerem – <strong>DOMIR Catering Adrianna Andrusieczko</strong>, specjalizującym się w zdrowym, zbilansowanym żywieniu dzieci. Zapewniamy posiłki bez cukru rafinowanego, pełne warzyw i kasz. Bez przeszkód realizujemy diety bezmleczne, bezglutenowe oraz indywidualne zalecenia alergologiczne.
+                    </div>
+                </div>
+
+                <!-- Pytanie 4 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all faq-card">
+                    <button type="button" class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-display font-bold text-base text-brand-dark bg-stone-50/50 hover:bg-stone-50">
+                        <span>Gdzie składa się dokumenty rekrutacyjne i gdzie znajduje się placówka?</span>
+                        <span class="faq-icon text-brand-coral text-xl font-bold">+</span>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 text-sm text-gray-600 bg-white border-t border-stone-100">
+                        Placówka mieści się przy <strong>ul. Kornela Makuszyńskiego 2, 75-442 Koszalin</strong>. Zgłoszenia i karty zapisu przyjmujemy w centralnym biurze <strong>Towarzystwa Przyjaciół Dzieci przy ul. M.J. Piłsudskiego 11-15 w Koszalinie</strong> (tel. 94 342 56 27) lub drogą mailową: przedszkola@tpd24.pl.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEKCJA KONTAKT I LOKALIZACJE -->
+    <section id="kontakt" class="py-20 bg-brand-sand relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-brand-coral bg-brand-coralLight px-3.5 py-1.5 rounded-full inline-block">
+                    Jesteśmy tu dla Ciebie
+                </span>
+                <h2 class="font-display font-black text-3xl sm:text-4xl text-brand-dark">
+                    Dane Kontaktowe i Dojazd
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Masz pytania dotyczące rekrutacji, czesnego lub adaptacji? Zadzwoń lub odwiedź nas w Koszalinie!
+                </p>
+            </div>
+
+            <!-- Kafelki adresowe -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                
+                <!-- Lokalizacja 1: JULKOWO (Główna) -->
+                <div class="bg-white rounded-3xl p-6 border-2 border-brand-coral/40 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-coralLight text-brand-coral text-xs font-black uppercase mb-3">
+                            Adres Placówki
+                        </div>
+                        <h3 class="font-display font-extrabold text-xl text-brand-dark">JULKOWO</h3>
+                        <p class="text-xs text-gray-500 font-semibold mb-4">Żłobek, Przedszkole, Centrum Rozwoju</p>
+                        
+                        <div class="text-sm text-gray-700 space-y-2">
+                            <p class="flex items-start gap-2">
+                                <span class="text-brand-coral text-base">📍</span>
+                                <span><strong>ul. Kornela Makuszyńskiego 2</strong><br>75-442 Koszalin</span>
+                            </p>
+                            <p class="flex items-center gap-2 pt-1">
+                                <span class="text-brand-coral text-base">👶</span>
+                                <span>Grupy żłobkowe i przedszkolne</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-stone-100">
+                        <a href="https://maps.google.com/?q=Kornela+Makuszy%C5%84skiego+2,+75-442+Koszalin" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-coral hover:underline">
+                            Nawiguj w Google Maps &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lokalizacja 2: Centralne Biuro Zapisów TPD -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-greenLight text-brand-green text-xs font-black uppercase mb-3">
+                            Biuro Rekrutacji TPD
+                        </div>
+                        <h3 class="font-display font-extrabold text-xl text-brand-dark">Towarzystwo Przyjaciół Dzieci</h3>
+                        <p class="text-xs text-gray-500 font-semibold mb-4">Oddział Okręgowy w Koszalinie</p>
+                        
+                        <div class="text-sm text-gray-700 space-y-2">
+                            <p class="flex items-start gap-2">
+                                <span class="text-brand-green text-base">📍</span>
+                                <span><strong>ul. M.J. Piłsudskiego 11-15</strong><br>75-501 Koszalin</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <span class="text-brand-green text-base">📞</span>
+                                <span>Tel: <a href="tel:943425627" class="font-bold hover:underline">94 342 56 27</a></span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <span class="text-brand-green text-base">✉️</span>
+                                <span>Mail: <a href="mailto:przedszkola@tpd24.pl" class="font-bold hover:underline">przedszkola@tpd24.pl</a></span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <span class="text-brand-green text-base">🌐</span>
+                                <span><a href="https://julkowo.pl" target="_blank" rel="noopener" class="font-bold hover:underline">www.julkowo.pl</a></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-stone-100">
+                        <span class="text-xs text-gray-500">Czynne: Poniedziałek – Piątek 7:30 – 15:30</span>
+                    </div>
+                </div>
+
+                <!-- Lokalizacja 3: Drugi oddział TPD Koszalin -->
+                <div class="bg-white rounded-3xl p-6 border border-stone-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-blueLight text-brand-blue text-xs font-black uppercase mb-3">
+                            Drugi Oddział TPD
+                        </div>
+                        <h3 class="font-display font-extrabold text-xl text-brand-dark">Oddział Tatarkiewicza</h3>
+                        <p class="text-xs text-gray-500 font-semibold mb-4">Zapraszamy również do filii</p>
+                        
+                        <div class="text-sm text-gray-700 space-y-2">
+                            <p class="flex items-start gap-2">
+                                <span class="text-brand-blue text-base">📍</span>
+                                <span><strong>ul. Tatarkiewicza 2b</strong><br>75-442 Koszalin</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <span class="text-brand-blue text-base">📞</span>
+                                <span>Tel: <a href="tel:502916815" class="font-bold hover:underline">502 916 815</a></span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <span class="text-brand-blue text-base">📞</span>
+                                <span>Tel: <a href="tel:798650503" class="font-bold hover:underline">798 650 503</a></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 mt-6 border-t border-stone-100">
+                        <span class="text-xs text-gray-500">Opieka żłobkowa i przedszkolna</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Interaktywna mapa dojazdu Google Maps (precyzyjny punkt: Kornela Makuszyńskiego 2, 75-442 Koszalin) -->
+            <div class="bg-white rounded-3xl p-4 sm:p-6 border border-stone-200 shadow-sm overflow-hidden">
+                <div class="flex flex-col sm:flex-row items-center justify-between pb-4 gap-4">
+                    <div>
+                        <h4 class="font-display font-bold text-lg text-brand-dark">Mapa: ul. Kornela Makuszyńskiego 2, 75-442 Koszalin</h4>
+                        <p class="text-xs text-gray-500">Dogodny dojazd, spokojna okolica i bezpieczne miejsca parkingowe dla rodziców</p>
+                    </div>
+                    <a href="https://maps.google.com/?q=Kornela+Makuszy%C5%84skiego+2,+75-442+Koszalin" target="_blank" rel="noopener" class="px-4 py-2 rounded-xl bg-brand-green text-white text-xs font-bold hover:bg-brand-green/90 transition-all flex items-center gap-1.5 flex-shrink-0 shadow-sm">
+                        <span>Otwórz w Google Maps</span> 🚗
+                    </a>
+                </div>
+                <div class="w-full h-80 sm:h-96 rounded-2xl overflow-hidden relative border border-stone-200 bg-stone-100">
+                    <iframe 
+                        title="Mapa dojazdu do Przedszkola i Żłobka Julkowo - ul. Kornela Makuszyńskiego 2, Koszalin"
+                        class="w-full h-full border-0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                        src="https://maps.google.com/maps?q=Kornela+Makuszy%C5%84skiego+2,+75-442+Koszalin&t=&z=16&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </main>
+
+    <!-- STOPKA STRONY (FOOTER - JEDYNE MIEJSCE WZMIANKI O KSM PRZYLESIE) -->
+    <footer class="bg-brand-dark text-white pt-16 pb-24 lg:pb-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+                
+                <!-- Kolumna 1: Brand -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-brand-yellowLight p-1 flex items-center justify-center">
+                            <span class="text-2xl">🌼</span>
+                        </div>
+                        <div>
+                            <span class="font-display font-black text-2xl tracking-tight text-white block">JULKOWO</span>
+                            <span class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider block">Koszalin • Żłobek • Przedszkole</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+                        Prowadzone przez <strong>Towarzystwo Przyjaciół Dzieci</strong> – Wojewódzkiego Lidera Akademii Rozwoju Żłobków. Ciepła opieka i wszechstronny rozwój każdego dziecka.
+                    </p>
+                </div>
+
+                <!-- Kolumna 2: Szybka nawigacja -->
+                <div>
+                    <h5 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Na skróty</h5>
+                    <ul class="space-y-2 text-xs text-gray-400 font-medium">
+                        <li><a href="#o-nas" class="hover:text-white transition-colors">O placówce</a></li>
+                        <li><a href="#atuty" class="hover:text-white transition-colors">Nasze atuty</a></li>
+                        <li><a href="#specjalisci" class="hover:text-white transition-colors">11 Etatowych Specjalistów</a></li>
+                        <li><a href="#programy" class="hover:text-white transition-colors">Programy edukacyjne</a></li>
+                        <li><a href="#galeria" class="hover:text-white transition-colors">Galeria i sale</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">Pytania i odpowiedzi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 3: Kontakt TPD -->
+                <div>
+                    <h5 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Biuro Zapisów</h5>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li>TPD Oddział Okręgowy w Koszalinie</li>
+                        <li>ul. M.J. Piłsudskiego 11-15</li>
+                        <li>75-501 Koszalin</li>
+                        <li class="pt-1"><strong class="text-white">Tel:</strong> 94 342 56 27</li>
+                        <li><strong class="text-white">E-mail:</strong> przedszkola@tpd24.pl</li>
+                        <li><strong class="text-white">WWW:</strong> www.julkowo.pl</li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 4: Oddziały -->
+                <div>
+                    <h5 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-4">Nasze Lokacje</h5>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><strong class="text-white block">JULKOWO:</strong> ul. Kornela Makuszyńskiego 2, 75-442 Koszalin</li>
+                        <li class="pt-2"><strong class="text-white block">Oddział Tatarkiewicza:</strong> ul. Tatarkiewicza 2b, 75-442 Koszalin</li>
+                        <li>Tel: 502 916 815 / 798 650 503</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Dedykowana ramka partnerstwa z KSM PRZYLESIE (wyłącznie na dole strony) -->
+            <div class="py-6 border-b border-stone-800">
+                <div class="p-4 rounded-2xl bg-stone-900 border border-stone-700/80 text-xs text-gray-300 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+                    <div class="flex items-center gap-3">
+                        <span class="text-2xl">🤝</span>
+                        <span>ŻŁOBEK I PRZEDSZKOLE <strong>„JULKOWO – Żłobek, Przedszkole, Centrum Rozwoju Dziecka”</strong> – powstał w Partnerstwie z <strong>KSM PRZYLESIE W KOSZALINIE</strong>.</span>
+                    </div>
+                    <a href="tel:943425627" class="text-brand-yellow hover:underline font-bold whitespace-nowrap">
+                        Zadzwoń do nas &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dolna linia praw autorskich -->
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>© JULKOWO – Towarzystwo Przyjaciół Dzieci w Koszalinie. Wszelkie prawa zastrzeżone.</p>
+                <div class="flex items-center gap-4">
+                    <span>ul. Kornela Makuszyńskiego 2, 75-442 Koszalin</span>
+                    <span>•</span>
+                    <a href="#kontakt" class="text-brand-coral hover:underline font-semibold">Kontakt & Zapisy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MOBILNY PŁYWAJĄCY PASEK SZYBKIEGO KONTAKTU -->
+    <div class="lg:hidden fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-stone-200 p-3 z-30 flex items-center gap-3">
+        <a href="tel:943425627" class="flex-1 py-3 px-4 rounded-xl font-display font-bold text-xs text-center text-brand-dark bg-stone-100 border border-stone-200 flex items-center justify-center gap-1.5">
+            <svg class="w-4 h-4 text-brand-coral" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+            <span>Zadzwoń: 94 342 56 27</span>
+        </a>
+        <a href="#kontakt" class="flex-1 py-3 px-4 rounded-xl font-display font-black text-xs text-center text-white bg-brand-coral shadow-md">
+            Informacje i Zapisy 🎈
+        </a>
+    </div>
+
+    <!-- MODAL LIGHTBOX DO POWIĘKSZANIA ZDJĘĆ GALERII -->
+    <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl">
+            <button onclick="closeLightbox()" type="button" aria-label="Zamknij podgląd zdjęcia" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center text-xl hover:bg-black/75 transition-colors">
+                ✕
+            </button>
+            <div class="aspect-[16/10] bg-stone-900 w-full overflow-hidden flex items-center justify-center">
+                <img id="lightboxImg" src="" alt="Podgląd zdjęcia" class="max-w-full max-h-full object-contain">
+            </div>
+            <div class="p-5 bg-white">
+                <p id="lightboxCaption" class="text-sm sm:text-base font-display font-bold text-brand-dark"></p>
+                <p class="text-xs text-gray-500 mt-0.5">JULKOWO Koszalin – ul. Kornela Makuszyńskiego 2, 75-442 Koszalin</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRZYCISK POWROTU DO GÓRY (SCROLL TO TOP) -->
+    <button id="scrollToTopBtn" aria-label="Wróć na górę strony" class="fixed bottom-20 lg:bottom-6 right-6 z-20 w-11 h-11 rounded-2xl bg-brand-dark/80 hover:bg-brand-dark text-white flex items-center justify-center shadow-lg transition-all opacity-0 pointer-events-none transform translate-y-3">
+        ↑
+    </button>
+
+    <!-- LOGIKA SKRYPTOWA JS (HAMBURGER, FILTRY GALERII, FAQ, LIGHTBOX) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            // 1. Mobilne menu hamburger
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIconClosed = document.getElementById('menuIconClosed');
+            const menuIconOpen = document.getElementById('menuIconOpen');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function () {
+                    const isOpen = !mobileMenu.classList.contains('hidden');
+                    if (isOpen) {
+                        mobileMenu.classList.add('hidden');
+                        menuIconClosed.classList.remove('hidden');
+                        menuIconOpen.classList.add('hidden');
+                    } else {
+                        mobileMenu.classList.remove('hidden');
+                        menuIconClosed.classList.add('hidden');
+                        menuIconOpen.classList.remove('hidden');
+                    }
+                });
+
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        menuIconClosed.classList.remove('hidden');
+                        menuIconOpen.classList.add('hidden');
+                    });
+                });
+            }
+
+            // 2. Filtrowanie Galerii
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => {
+                        b.classList.remove('bg-brand-coral', 'text-white');
+                        b.classList.add('bg-stone-100', 'text-gray-700');
+                    });
+                    btn.classList.remove('bg-stone-100', 'text-gray-700');
+                    btn.classList.add('bg-brand-coral', 'text-white');
+
+                    const filter = btn.getAttribute('data-filter');
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 3. Obsługa Akordeonów FAQ
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const content = toggle.nextElementSibling;
+                    const icon = toggle.querySelector('.faq-icon');
+                    const isHidden = content.classList.contains('hidden');
+
+                    // Zamknij pozostałe akordeony
+                    document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                    document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        icon.textContent = '−';
+                    }
+                });
+            });
+
+            // 4. Przycisk Powrotu do Góry
+            const scrollTopBtn = document.getElementById('scrollToTopBtn');
+            if (scrollTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+                        scrollTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    } else {
+                        scrollTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+                        scrollTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    }
+                });
+                scrollTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+        });
+
+        // 5. Globalne Funkcje Lightboxa
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightboxModal');
+            const img = document.getElementById('lightboxImg');
+            const cap = document.getElementById('lightboxCaption');
+            
+            img.src = src;
+            cap.textContent = caption;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightboxModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // Zamykanie modala klawiszem Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+
+</body>
+</html>
